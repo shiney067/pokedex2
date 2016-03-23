@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		829480531CA22AE8007AF3DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480521CA22AE8007AF3DE /* AppDelegate.swift */; };
-		829480551CA22AE8007AF3DE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480541CA22AE8007AF3DE /* FirstViewController.swift */; };
-		829480571CA22AE8007AF3DE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480561CA22AE8007AF3DE /* SecondViewController.swift */; };
 		8294805A1CA22AE8007AF3DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829480581CA22AE8007AF3DE /* Main.storyboard */; };
 		8294805C1CA22AE8007AF3DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8294805B1CA22AE8007AF3DE /* Assets.xcassets */; };
 		8294805F1CA22AE8007AF3DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8294805D1CA22AE8007AF3DE /* LaunchScreen.storyboard */; };
 		8294806A1CA22AE8007AF3DE /* pokedex2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480691CA22AE8007AF3DE /* pokedex2Tests.swift */; };
 		829480751CA22AE8007AF3DE /* pokedex2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480741CA22AE8007AF3DE /* pokedex2UITests.swift */; };
 		829480831CA22F52007AF3DE /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 829480821CA22F52007AF3DE /* pokemon.csv */; };
+		829480861CA231DF007AF3DE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480851CA231DF007AF3DE /* Pokemon.swift */; };
+		8294808A1CA234F3007AF3DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829480891CA234F3007AF3DE /* ViewController.swift */; };
+		8294808D1CA244A9007AF3DE /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294808C1CA244A9007AF3DE /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 /* Begin PBXFileReference section */
 		8294804F1CA22AE7007AF3DE /* pokedex2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829480521CA22AE8007AF3DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		829480541CA22AE8007AF3DE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		829480561CA22AE8007AF3DE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		829480591CA22AE8007AF3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8294805B1CA22AE8007AF3DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8294805E1CA22AE8007AF3DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		829480741CA22AE8007AF3DE /* pokedex2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedex2UITests.swift; sourceTree = "<group>"; };
 		829480761CA22AE8007AF3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829480821CA22F52007AF3DE /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		829480851CA231DF007AF3DE /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		829480891CA234F3007AF3DE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		8294808C1CA244A9007AF3DE /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,10 @@
 		829480511CA22AE8007AF3DE /* pokedex2 */ = {
 			isa = PBXGroup;
 			children = (
+				829480841CA231A0007AF3DE /* Model */,
 				829480521CA22AE8007AF3DE /* AppDelegate.swift */,
 				829480821CA22F52007AF3DE /* pokemon.csv */,
-				829480541CA22AE8007AF3DE /* FirstViewController.swift */,
-				829480561CA22AE8007AF3DE /* SecondViewController.swift */,
+				829480891CA234F3007AF3DE /* ViewController.swift */,
 				829480581CA22AE8007AF3DE /* Main.storyboard */,
 				8294805B1CA22AE8007AF3DE /* Assets.xcassets */,
 				8294805D1CA22AE8007AF3DE /* LaunchScreen.storyboard */,
@@ -129,6 +131,23 @@
 				829480761CA22AE8007AF3DE /* Info.plist */,
 			);
 			path = pokedex2UITests;
+			sourceTree = "<group>";
+		};
+		829480841CA231A0007AF3DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				829480851CA231DF007AF3DE /* Pokemon.swift */,
+				8294808B1CA24412007AF3DE /* View */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8294808B1CA24412007AF3DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8294808C1CA244A9007AF3DE /* PokeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829480571CA22AE8007AF3DE /* SecondViewController.swift in Sources */,
+				8294808D1CA244A9007AF3DE /* PokeCell.swift in Sources */,
+				8294808A1CA234F3007AF3DE /* ViewController.swift in Sources */,
+				829480861CA231DF007AF3DE /* Pokemon.swift in Sources */,
 				829480531CA22AE8007AF3DE /* AppDelegate.swift in Sources */,
-				829480551CA22AE8007AF3DE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
