@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="Pokemon.ttf">
             <string>PokemonSolidNormal</string>
+            <string>PokemonSolidNormal</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -49,13 +50,25 @@
                                             <action selector="music:" destination="jsV-Bs-02v" eventType="touchUpInside" id="PE7-Po-lOg"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYR-KT-bYE">
+                                        <rect key="frame" x="12" y="25" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="qbZ-Z7-fy0"/>
+                                            <constraint firstAttribute="height" constant="21" id="wv4-d3-BCX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.945169339" green="0.0099146269249999995" blue="0.1359677074" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="HYR-KT-bYE" firstAttribute="top" secondItem="kEG-QB-wPA" secondAttribute="top" constant="25" id="4Vv-XG-WRM"/>
                                     <constraint firstItem="chb-Oh-4bn" firstAttribute="top" secondItem="kEG-QB-wPA" secondAttribute="top" constant="17" id="9JU-AX-eNN"/>
                                     <constraint firstItem="Xrt-pK-KvO" firstAttribute="top" secondItem="kEG-QB-wPA" secondAttribute="top" constant="18" id="Bgg-YI-KBf"/>
                                     <constraint firstAttribute="trailing" secondItem="Xrt-pK-KvO" secondAttribute="trailing" constant="8" id="P2m-iX-7of"/>
                                     <constraint firstAttribute="height" constant="55" id="Pkk-BW-b9M"/>
+                                    <constraint firstItem="HYR-KT-bYE" firstAttribute="leading" secondItem="kEG-QB-wPA" secondAttribute="leading" constant="12" id="TZC-Gn-tvt"/>
                                     <constraint firstItem="chb-Oh-4bn" firstAttribute="centerX" secondItem="kEG-QB-wPA" secondAttribute="centerX" id="pZG-LJ-2jG"/>
                                 </constraints>
                             </view>
@@ -117,7 +130,7 @@
                                     </mask>
                                 </variation>
                             </collectionView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="IXS-Yz-S1N">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search For Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="IXS-Yz-S1N">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Sy9-oW-eXh"/>
@@ -177,6 +190,8 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="dHS-Ff-9cd" id="aJq-qY-Snh"/>
+                        <outlet property="countChar" destination="HYR-KT-bYE" id="oNK-B1-W49"/>
+                        <outlet property="searchBar" destination="IXS-Yz-S1N" id="ueo-Ey-9Uk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5X-35-48j" userLabel="First Responder" sceneMemberID="firstResponder"/>
